@@ -1,34 +1,40 @@
-@font-face {
-    font-family: blocky;
-    src: url(../fonts/blocky.ttf);
-}
-
-body {
+* {
     margin: 0;
+    padding: 0;
 }
-
-.app {
-    background-color: #000;
-    color: #fff;
-    font-family: blocky;
-    font-size: 25px;
-    padding: 50px;
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Cinzel', serif;
+}
+.homepage_bg {
+    background-image: url('../images/homepage_bg_2.jpeg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    filter: grayscale(0%);
+    position: relative;
+}
+.homepage_bg > .filter {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*background-color: rgba(0,0,0, .4);*/
+    /*border-radius: 15px;*/
+    color: white;
+}
+.titleFilter {
+    display: inline-block;
+    position: relative;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    top: 20%;
+    font-size: 1.6rem;
+    width: 30%;
     text-align: center;
-}
-
-.app .logo {
-    height: 200px;
-}
-
-.rotate {
-    animation: spin 10s linear infinite;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    border-bottom: 1px solid white;
 }
