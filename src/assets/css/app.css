@@ -7,6 +7,15 @@ body {
     height: 100%;
     font-family: 'Cinzel', serif;
 }
+li:hover {
+    cursor: pointer;
+}
+.navbarContainer > ul li:hover {
+    background-color: white;
+    color: black;
+}
+
+/*//////////////////////////////////////////////////////////////   Landing Page*/
 .homepage_bg {
     background-image: url('../images/homepage_bg_2.jpeg');
     background-repeat: no-repeat;
@@ -30,11 +39,48 @@ body {
 .titleFilter {
     display: inline-block;
     position: relative;
-    left: 70%;
+    left: 64%;
     transform: translate(-50%,-50%);
-    top: 20%;
+    top: 47%;
     font-size: 1.6rem;
     width: 30%;
     text-align: center;
-    border-bottom: 1px solid white;
+    color: #E5F3F9;
+}
+
+.titleFilter > h1 {
+    border-bottom: 1px solid #E5F3F9;
+}
+.navbarContainer > ul {
+    list-style-type: none;
+    display: inline-block;
+}
+.navbarContainer > ul li {
+    position: relative;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .4s;
+}
+.navbarContainer {
+    position: relative;
+    top: 10px;
+}
+
+/*Mobile View*/
+@media only screen
+and (min-device-width: 315px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .titleFilter {
+        display: inline-block;
+        position: relative;
+        left: 0;
+        transform: none;
+        top: 47%;
+        font-size: 1.6rem;
+        width: 100%;
+        text-align: center;
+        color: #E5F3F9;
+    }
 }
