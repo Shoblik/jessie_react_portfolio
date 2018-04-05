@@ -23,7 +23,9 @@ class Homepage extends Component {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam assumenda at consectetur dolores eos et harum illum inventore iusto libero magnam minus nam neque, nihil, non nulla odit possimus praesentium sed sunt unde, voluptatibus? Alias asperiores consequuntur doloremque dolorum est hic impedit inventore minus molestiae molestias nam nostrum officia, omnis perspiciatis praesentium quas quia ullam veniam voluptas voluptatem voluptatibus.</p>
                             </div>
                         </div>
-                        <div className="rightColumn"></div>
+                        <div className="rightColumn">
+
+                        </div>
                     </section>
                 </div>
             </div>

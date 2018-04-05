@@ -8,44 +8,71 @@ class Dynamic_Attribute extends Component {
             count: 0,
             innerWordCount: 0,
             word: '',
+            deleting: false,
         };
     }
-    componentDidMount() {
-        const attrArray = ['create', 'write', 'innovate'];
-        console.log('word, ' + this.state.word + attrArray[this.state.count][this.state.innerWordCount]);
 
-                setInterval(function() {
-                    this.setState({
-                        word: this.state.word + attrArray[this.state.count][this.state.innerWordCount],
-                });
-                    console.log('letter ' + )
-                    if (this.state.innerWordCount < attrArray[this.state.count].length) {
-                        //if we aren't at the end of the word
-                        this.setState({
-                            innerWordCount: this.state.innerWordCount++,
-                        });
-                    } else {
-                        //We are at the end of the word
-                        if (this.state.count < attrArray) {
-                            //not at the end of the attribute array
-                            this.setState({
-                                count: this.state.count++,
-                                innerWordCount: 0,
-                            });
-                        } else {
-                            //at the end of the attribute array
-                            this.setState({
-                                count: 0,
-                                innerWordCount: 0,
-                            });
-                        }
-                    }
-
-                }, 500);
+    deleteIndividialWords(attrArray) {
+        let incrementor = 100;
+        for (let i = attrArray[this.state.count].length - 1; i >= 0; i--) {
+            let wordOnScreen = this.state.word;
+            let tmpNewWord = wordOnScreen.substring(0, i);
+            setTimeout(() => {
+                this.setState({
+                    word: tmpNewWord,
+                })
+            }, incrementor);
+            incrementor += 100;
         }
 
-    render() {
+        setTimeout(() => {
+            if (this.state.count < attrArray.length - 1) {
+                this.setState({
+                    innerWordCount: 0,
+                    deleting: false,
+                    count: this.state.count + 1,
+                })
+            } else {
+                this.setState({
+                    innerWordCount: 0,
+                    deleting: false,
+                    count: 0,
+                })
+            }
+        }, incrementor);
+    }
 
+    wordIncrementor() {
+        const attrArray = ['create', 'write', 'innovate'];
+
+        if (this.state.innerWordCount < attrArray[this.state.count].length) {
+            //if it isn't the end of the word
+            console.log(attrArray[this.state.count][this.state.innerWordCount]);
+            this.setState({
+                word: this.state.word + attrArray[this.state.count][this.state.innerWordCount],
+                innerWordCount: this.state.innerWordCount + 1,
+            })
+        } else {
+            setTimeout(() => {
+                this.setState({
+                    deleting: true,
+                });
+                this.deleteIndividialWords(attrArray);
+            }, 500);
+        }
+
+    }
+    componentDidMount() {
+       this.wordIncrementor();
+    }
+    componentDidUpdate() {
+        if (!this.state.deleting) {
+            setTimeout(() => {
+                this.wordIncrementor();
+            }, 200);
+        }
+    }
+    render() {
         return (
             <div className="attrContainer">
                 <h3>Hello I'm Jessie,</h3>

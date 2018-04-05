@@ -79,12 +79,15 @@ li:hover {
 }
 .attributeH3 {
     margin-left: 25%;
-    width: 100%;
+    width: 130%;
 }
 /*//////////////////////////////////////////////////   About page*/
 .about {
     height: 100vh;
     width: 100vw;
+}
+span.changingWord {
+    font-size: 120%;
 }
 .about > h1 {
     width: 15%;
