@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import VerticalNavBar from './vertical_navbar';
 import Dynamic_Attribute from './dynamic_attributes';
-import jessieProfile from '../assets/images/jessieProfile.png';
-
 class Homepage extends Component {
     render() {
         return (
