@@ -152,18 +152,46 @@ span.changingWord {
     text-decoration: underline;
 }
 .portfolioSection {
-    background-color: rgba(0,0,0, .5);
+    /*background-color: rgba(0,0,0, .5);*/
     margin-top: 5%;
-    height: 100vh;
+    height: 200vh;
 }
 .portfolioContainer {
-    background-color: orange;
-    width: 40%;
-    height: 30%;
+    border: 1px solid black;
+    width: 33%;
+    height: 50%;
     display: inline-block;
     margin: 10px 20px;
 }
-
+.coverContainer {
+    height: 59%;
+    text-align: center;
+}
+.btnContainer {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btnContainer button {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: .3s;
+}
+.btnContainer button:hover {
+    background-color: white;
+}
+button.aboutBtn {
+    margin-right: 50%;
+}
+.portfolioContainer {
+    border: 1px solid black;
+    width: 33%;
+    height: 50%;
+    display: inline-block;
+    margin: 10px 20px;
+    background-color: lightslategray;
+}
 /*Mobile View*/
 @media only screen
 and (min-device-width: 315px)
