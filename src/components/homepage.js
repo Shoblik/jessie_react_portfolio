@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import VerticalNavBar from './vertical_navbar';
 import Dynamic_Attribute from './dynamic_attributes';
+import TunedIn from './tunedIn';
+import PortfolioSamples from './portfolioSamples';
+
 class Homepage extends Component {
     render() {
         return (
@@ -24,9 +27,13 @@ class Homepage extends Component {
                             </div>
                         </div>
                         <div className="rightColumn">
-
+                            <TunedIn />
                         </div>
                     </section>
+                </div>
+                <div className='portfolioSection'>
+                    <h1>Portfolio</h1>
+                    <PortfolioSamples />
                 </div>
             </div>
         )
