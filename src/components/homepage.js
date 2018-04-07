@@ -3,11 +3,25 @@ import VerticalNavBar from './vertical_navbar';
 import Dynamic_Attribute from './dynamic_attributes';
 import TunedIn from './tunedIn';
 import PortfolioSamples from './portfolioSamples';
+import menu from '../assets/images/hamburger_menu.svg';
 
 class Homepage extends Component {
     render() {
         return (
             <div>
+                <div className='menuContainer'>
+                    <div className='menuDiv'>
+                        <ul>
+                            <li><span>Homepage</span></li>
+                            <li><span>About</span></li>
+                            <li><span>Portfolio</span></li>
+                            <li><span>Resume</span></li>
+                            <li><span>Contact</span></li>
+                        </ul>
+                    </div>
+                    <img src={menu} />
+                </div>
+
                 <div className="homepage_bg">
                     <div className="filter">
                         <div className='titleFilter'>

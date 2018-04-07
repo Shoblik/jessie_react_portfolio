@@ -7,9 +7,11 @@ class PortfolioSamples extends Component {
         for (let i=0; i < 6; i++) {
             let jsx =
                 <div key={i} className='portfolioContainer'>
-                    <div className='btnContainer'>
-                        <button className='aboutBtn'>About</button>
-                        <button className='viewBtn'>View</button>
+                    <div className="portfolioFilter">
+                        <div className='btnContainer'>
+                            <button className='aboutBtn'>About</button>
+                            <button className='viewBtn'>View</button>
+                        </div>
                     </div>
                 </div>;
             jsxArr.push(jsx);
