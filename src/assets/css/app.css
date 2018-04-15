@@ -280,7 +280,7 @@ li span {
     transition: .3s;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 80%;
     transform: translate(-50%,-50%);
 }
 .portfolioContainer:hover > .portfolioFilter {
@@ -290,7 +290,33 @@ li span {
     left: 20%;
 }
 .portfolioContainer:hover > .portfolioFilter > .btnContainer .viewBtn {
-    left: 80%;
+    /*left: 80%;*/
+}
+.coverTextContainer {
+    width: 60%;
+    background: blue;
+    height: 60%;
+    top: 5%;
+    float: right;
+    position: relative;
+    font-family: helvetica;
+    font-size: 80%;
+    overflow:hidden;
+}
+.coverImgContainer {
+    display: inline-block;
+    width: 40%;
+    background: yellow;
+    height: 60%;
+    position: relative;
+    float: left;
+    top: 5%;
+}
+.coverTextContainer > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
 }
 /*Mobile View*/
 @media only screen
