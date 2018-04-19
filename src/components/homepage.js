@@ -4,6 +4,7 @@ import Dynamic_Attribute from './dynamic_attributes';
 import TunedIn from './tunedIn';
 import PortfolioSamples from './portfolioSamples';
 import menu from '../assets/images/hamburger_menu.svg';
+import Resume from './resume';
 
 class Homepage extends Component {
     render() {
@@ -49,6 +50,7 @@ class Homepage extends Component {
                     <h1>Portfolio</h1>
                     <PortfolioSamples />
                 </div>
+                <Resume />
             </div>
         )
     }
