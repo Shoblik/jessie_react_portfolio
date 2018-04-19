@@ -358,10 +358,62 @@ li span {
 }
 
 /*///////////////////////////////////////////////////////////////////////       Resume Section*/
-.resumeSection > h1 {
+.resumeSection  h1 {
     text-align: center;
     text-decoration: underline;
     margin-top: 20px;
+}
+.educationSection {
+    width: 40%;
+    vertical-align: top;
+}
+.workSection, .educationSection {
+    display: inline-block;
+}
+.workSection {
+    width: 60%;
+}
+.workSection > h2, .educationSection > h2 {
+    text-align: center;
+}
+.leftSnippet {
+    width: 25%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+.leftSnippet, .mainContentSnippet {
+    display: inline-block;
+}
+.workNode {
+    background-color: WHITE;
+    border-bottom: 1px solid black;
+    height: 30vh;
+}
+.mainContentSnippet {
+    width: 73%;
+    position: relative;
+    vertical-align: top;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mainContentSnippet > ul {
+    width: 90%;
+    margin: 10px auto 0;
+}
+.workTitle {
+    text-align: center;
+    font-size: 120%;
+    margin-top: 3%;
+    font-weight: 900;
+}
+.workSection > div {
+    margin-top: 5%;
+}
+.workRole {
+    margin-bottom: 15px;
 }
 
 
