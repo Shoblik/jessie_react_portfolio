@@ -265,7 +265,7 @@ li span {
 }
 .portfolioFilter {
     position: relative;
-    height: 90%;
+    height: 100%;
     width: 0;
     background-color: rgba(0,0,0, .6);
     top: 50%;
@@ -293,7 +293,7 @@ li span {
     color: orange;
 }
 .portfolioContainer:hover > .portfolioFilter {
-    width: 90%;
+    width: 100%;
 }
 .portfolioContainer:hover > .portfolioFilter > .btnContainer > .aboutBtn {
     left: 20%;
