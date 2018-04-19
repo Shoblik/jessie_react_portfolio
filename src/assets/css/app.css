@@ -409,8 +409,18 @@ li span {
     margin-top: 3%;
     font-weight: 900;
 }
-.workSection > div {
-    margin-top: 5%;
+.educationSection > img {
+    width: 45%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.educationSection h4 {
+    text-align: center;
+}
+.educationSection ul {
+    width: 94%;
+    margin: 10px auto;
 }
 .workRole {
     margin-bottom: 15px;

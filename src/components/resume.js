@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import uciLogo from '../assets/images/uci_logo.png';
 
 class Resume extends Component {
     renderEductionList() {
@@ -36,15 +37,20 @@ class Resume extends Component {
             <div className='resumeSection'>
                 <h1>Resume</h1>
                 <div className="workSection">
-                    <h2>Work Experience</h2>
                     <div>
                     {this.renderEductionList()}
                     </div>
                 </div>
                 <div className="educationSection">
-                    <h2>Education</h2>
+                    <img src={uciLogo}/>
+                    <h2>UNIVERSITY OF CALIFORNIA, IRVINE</h2>
+                    <h4>2015 - Present</h4>
+                    <ul>
+                        <li>Bachelor of Arts in Literary Journalism expected June 2019</li>
+                        <li>GPA: 3.7</li>
+                        <li>Relevant Coursework: Intro to Literary Journalism (LJ), Intro to Reporting, History & Ethics of LJ, English Literature, Foreign Literature, Intro to Fiction Writing, Graphic Design</li>
+                    </ul>
                 </div>
-                <h1>Skills</h1>
             </div>
         )
     }
