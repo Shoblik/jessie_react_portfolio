@@ -161,7 +161,6 @@ span.changingWord {
     height: 52vh;
     display: inline-block;
     margin: 10px 20px;
-    background-color: lightslategray;
 }
 .coverContainer {
     height: 59%;
@@ -425,7 +424,57 @@ li span {
 .workRole {
     margin-bottom: 15px;
 }
-
+.skillsSection {
+    position: relative;
+    top: 7vh;
+}
+.skillsSection > h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+.skillIconContainer {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+.skillIconContainer > img {
+    margin: 12px;
+}
+/*///////////////////////////////////////////////////        Contact Section*/
+.contactSection {
+    margin-top: 100px;
+}
+.contactSection > h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+.letsChatCircle {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid darkturquoise;
+    position: relative;
+    left: 10%;
+    top: 50px;
+    text-align: center;
+}
+.letsChatCircle > h2 {
+    position: relative;
+    top: 10%;
+    border-bottom: 1px solid turquoise;
+    width: 50%;
+    margin: auto;
+}
+.socialMediaWrapper {
+    width: 80%;
+    top: 21%;
+    position: relative;
+    margin: auto;
+}
+.socialMediaWrapper img {
+    width: 75px;
+    margin: 5px;
+}
 
 /*Mobile View*/
 @media only screen

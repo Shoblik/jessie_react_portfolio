@@ -5,6 +5,8 @@ import TunedIn from './tunedIn';
 import PortfolioSamples from './portfolioSamples';
 import menu from '../assets/images/hamburger_menu.svg';
 import Resume from './resume';
+import Skills from './skills';
+import Contact from './contact';
 
 class Homepage extends Component {
     render() {
@@ -51,6 +53,8 @@ class Homepage extends Component {
                     <PortfolioSamples />
                 </div>
                 <Resume />
+                <Skills />
+                <Contact />
             </div>
         )
     }
