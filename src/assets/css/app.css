@@ -446,7 +446,7 @@ li span {
 }
 .contactSection > h1 {
     text-align: center;
-    text-decoration: underline;
+    font-size: 275%;
 }
 .letsChatCircle {
     height: 400px;
@@ -454,9 +454,8 @@ li span {
     border-radius: 50%;
     border: 2px solid darkturquoise;
     position: relative;
-    left: 10%;
-    top: 50px;
     text-align: center;
+    margin: auto;
 }
 .letsChatCircle > h2 {
     position: relative;
@@ -474,6 +473,35 @@ li span {
 .socialMediaWrapper img {
     width: 75px;
     margin: 5px;
+}
+.contactRight {
+    position: relative;
+    margin-top: 30px;
+}
+.contactLeft, .contactRight {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    /* height: 100%; */
+}
+.innerLeft input {
+    width: 50%;
+    height: 5vh;
+    margin-bottom: 15px;
+}
+textarea.messageInput {
+    width: 80%;
+    height: 20vh;
+}
+button.contactSubmitBtn {
+    position: relative;
+    left: 80%;
+    transform: translateX(-93%);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
 }
 
 /*Mobile View*/

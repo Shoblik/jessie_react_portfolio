@@ -47,7 +47,6 @@ class Dynamic_Attribute extends Component {
 
         if (this.state.innerWordCount < attrArray[this.state.count].length) {
             //if it isn't the end of the word
-            console.log(attrArray[this.state.count][this.state.innerWordCount]);
             this.setState({
                 word: this.state.word + attrArray[this.state.count][this.state.innerWordCount],
                 innerWordCount: this.state.innerWordCount + 1,

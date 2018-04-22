@@ -15,7 +15,7 @@ class Resume extends Component {
         };
         for (let i=0; i<3; i++) {
             let jsx =
-                <div className='workNode'>
+                <div key={i} className='workNode'>
                     <div className='leftSnippet'>
                         <div className='workRole'>{roleArr[i]}</div>
                         <div className='workDate'>{dateArr[i]}</div>
