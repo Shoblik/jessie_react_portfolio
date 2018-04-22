@@ -379,24 +379,31 @@ li span {
     width: 25%;
     text-align: center;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
     margin-left: 10px;
+    /* vertical-align: middle; */
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    /* float: left; */
+    /* vertical-align: bottom; */
 }
 .leftSnippet, .mainContentSnippet {
     display: inline-block;
 }
 .workNode {
-    background-color: WHITE;
+    background-color: white;
     border-bottom: 1px solid black;
-    height: 30vh;
+    position: relative;
 }
 .mainContentSnippet {
     width: 73%;
     position: relative;
     vertical-align: top;
     top: 50%;
-    transform: translateY(-50%);
+    left: 27%;
 }
 .mainContentSnippet > ul {
     width: 90%;
