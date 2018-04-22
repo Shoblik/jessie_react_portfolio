@@ -17,7 +17,8 @@ class Contact extends Component {
                     <div className='letsChatCircle'>
                         <h2>Lets Chat!</h2>
                         <div className='socialMediaWrapper'>
-                            <img src={email} alt="Email"/>
+                            <img onClick = {() => {window.location.href = "mailto:jessienyount@gmail.com?subject=Web Portfolio Inquiry"}}
+                            src={email} alt="Email"/>
                             <img src={linkedin} alt="LinkedIn"/>
                             <img src={facebook} alt="Facebook"/>
                             <img src={twitter} alt="Twitter"/>

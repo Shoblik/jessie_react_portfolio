@@ -350,10 +350,10 @@ li span {
     background-size: cover;
 }
 .container4 {
-    background-image: url('../images/portfolio_cover_1.png');
+    background-image: url('../images/portfolio_cover_5.png');
 }
 .container5 {
-    background-image: url('../images/portfolio_cover_2.jpg');
+    background-image: url('../images/portfolio_cover_6.jpg');
 }
 
 /*///////////////////////////////////////////////////////////////////////       Resume Section*/
@@ -488,6 +488,7 @@ li span {
     width: 50%;
     height: 5vh;
     margin-bottom: 15px;
+    border: 1px solid lightblue;
 }
 textarea.messageInput {
     width: 80%;
@@ -520,4 +521,44 @@ and (-webkit-min-device-pixel-ratio: 2) {
         text-align: center;
         color: #E5F3F9;
     }
+    .attrContainer {
+        display: none;
+    }
+    .about > h1 {
+        width: 100%;
+        text-align: center;
+         border-bottom: none;
+        text-decoration: underline;
+    }
+    .leftColumn {
+        width: 100%;
+    }
+    .profilePhoto {
+        width: 90%;
+    }
+    .profileContent {
+        width: 90%;
+    }
+    .rightColumn {
+        display: none;
+    }
+    .portfolioContainer {
+        font-size: initial;
+        width: 99%;
+        margin: 0;
+    }
+    .coverContainer {
+        font-size: 0;
+    }
+    .portfolioContainer > .portfolioFilter {
+        width: 100%;
+    }
+    .coverImgContainer {
+        display: none;
+    }
+    .coverTextContainer {
+        width: 100%;
+        float: none;
+    }
+
 }
