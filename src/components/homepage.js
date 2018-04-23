@@ -9,20 +9,50 @@ import Skills from './skills';
 import Contact from './contact';
 
 class Homepage extends Component {
+    showNavBar() {
+        let body = document.querySelector('body');
+        if (body.style.left === '0px' || body.style.left === '') {
+            body.style.left = '25%';
+        } else {
+            body.style.left = 0;
+        }
+        // let body = document.querySelector('body');
+        // console.log(body.style.transform);
+        // if (body.style.transform === 'none' || body.style.transform === '') {
+        //     body.style.transform = 'translateX(250px)';
+        // } else {
+        //     body.style.transform = 'none';
+        // }
+        // let menu = document.querySelector('.menuDiv');
+        // console.log(menu.style.transform);
+        // if (menu.style.transform === 'translateX(-100%)' || menu.style.transform === '') {
+        //     menu.style.transform = 'translateX(-100%)';
+        // } else {
+        //     menu.style.transform = 'translateX(-100%)';
+        // }
+        // let menu = document.querySelector('.menuDiv');
+        // console.log(menu.style.transform);
+        // if (menu.style.transform === 'translateX(-100%)' || menu.style.transform === '') {
+        //     menu.style.transform = 'translateX(0%)';
+        // } else {
+        //     menu.style.transform = 'translateX(-100%)';
+        // }
+    }
+
     render() {
         return (
             <div>
-                <div className='menuContainer'>
-                    <div className='menuDiv'>
-                        <ul>
-                            <li><span>Homepage</span></li>
-                            <li><span>About</span></li>
-                            <li><span>Portfolio</span></li>
-                            <li><span>Resume</span></li>
-                            <li><span>Contact</span></li>
-                        </ul>
-                    </div>
+                <div className='menuContainer' onClick={this.showNavBar}>
                     <img src={menu} />
+                </div>
+                <div className='menuDiv'>
+                    <ul>
+                        <li><span>Homepage</span></li>
+                        <li><span>About</span></li>
+                        <li><span>Portfolio</span></li>
+                        <li><span>Resume</span></li>
+                        <li><span>Contact</span></li>
+                    </ul>
                 </div>
 
                 <div className="homepage_bg">

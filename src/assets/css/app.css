@@ -9,6 +9,8 @@ body {
     font-family: 'Cinzel', serif;
     position: relative;
     overflow-x: hidden;
+    left: 0px;
+    transition: .7s;
 }
 li:hover {
     cursor: pointer;
@@ -203,32 +205,31 @@ span.changingWord {
 }
 .menuContainer {
     z-index: 1000;
-    left: 97%;
-    transform: translateX(-100%);
-    top: 4%;
+    left: 100%;
+    transform: translate(-200%, 100%);
+    top: 0%;
     position: fixed;
 }
 .menuContainer:hover {
     cursor: pointer;
 }
 
-.menuContainer:hover .menuDiv {
-    height: 400px;
-}
 .menuDiv {
-    width: 450%;
-    height: 0;
-    background-color: rgba(0,0,0, .7);
-    position: absolute;
-    transform: translateX(-100%);
+    width: 25%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
     transition: .3s;
     overflow: hidden;
     text-align: center;
-    color: white;
-    border-radius: 10px;
+    color: black;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition-timing-function: ease-out;
+    font-size: 130%;
 }
 .menuDiv ul li:hover {
-    background-color: black;
+    /*background-color: black;*/
     /* font-size: 120%; */
 }
 .menuDiv ul {
@@ -240,8 +241,8 @@ span.changingWord {
 .menuDiv ul li {
     display: block;
     height: 20%;
-    text-align: center;
-    border-bottom: 1px solid black;
+    text-align: left;
+    padding-left: 20px;
 }
 li span {
     position: relative;
