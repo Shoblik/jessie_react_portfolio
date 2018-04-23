@@ -17,7 +17,7 @@ class PortfolioSamples extends Component {
         for (let i=0; i < 6; i++) {
             if (i < 4) {
                 let jsx =
-                    <div key={i} className='portfolioContainer'>
+                    <div key={i} className={'portfolioContainer container' + i}>
                         <div className="portfolioFilter">
                             <div className='btnContainer'>
                                 <div className ="coverImgContainer"><img src={imgArr[i]}/></div>

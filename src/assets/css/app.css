@@ -346,8 +346,14 @@ li span {
 .coverImgContainer img {
     width: 100%;
 }
-.container4, .container5 {
+.container4, .container5, .container1, .container3  {
     background-size: cover;
+}
+.container1 {
+    background-image: url('../images/portfolio_cover_2.png');
+}
+.container3 {
+    background-image: url('../images/portfolio_cover_4.png');
 }
 .container4 {
     background-image: url('../images/portfolio_cover_5.png');
@@ -397,6 +403,7 @@ li span {
     background-color: white;
     border-bottom: 1px solid black;
     position: relative;
+    padding: 15px 0;
 }
 .mainContentSnippet {
     width: 73%;
@@ -566,6 +573,60 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .coverTextContainer {
         width: 100%;
         float: none;
+    }
+    .leftSnippet {
+        width: 20%;
+        font-size: 79%;
+    }
+    .mainContentSnippet {
+        font-size: 90%;
+    }
+    .workSection {
+        width: 100%;
+    }
+    .educationSection ul {
+        width: 84%;
+        margin: 10px auto;
+        box-sizing: border-box;
+        transform: translateX(8%);
+    }
+    .educationSection {
+        width: 100%;
+    }
+
+    .contactLeft, .contactRight {
+        display: block;
+        width: 100%;
+    }
+    .letsChatCircle {
+        height: 250px;
+        width: 250px;
+        margin: auto;
+    }
+    .socialMediaWrapper {
+        width: 80%;
+        top: 21%;
+        margin: auto;
+    }
+    .contactRight > form {
+        width: 75%;
+        margin: auto;
+    }
+    .innerLeft input {
+        width: 76%;
+        height: 5vh;
+        margin-bottom: 15px;
+        border: 1px solid lightblue;
+    }
+    textarea.messageInput {
+        width: 100%;
+    }
+    button.contactSubmitBtn {
+        left: 100%;
+    }
+    .socialMediaWrapper img {
+        width: 40px;
+        margin: 5px;
     }
 
 }
