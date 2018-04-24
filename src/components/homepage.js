@@ -12,7 +12,7 @@ class Homepage extends Component {
     showNavBar() {
         let body = document.querySelector('body');
         if (body.style.left === '0px' || body.style.left === '') {
-            body.style.left = '25%';
+            body.style.left = '250px';
         } else {
             body.style.left = 0;
         }
